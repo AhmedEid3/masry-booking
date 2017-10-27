@@ -1,7 +1,54 @@
+/*start fonts*/
+@font-face {
+    font-family: "Harabara Bold";
+    src: url("../fonts/brandon-grotesque/Brandon_bld.otf") format("opentype");
+}
+@font-face {
+    font-family: "Harabara Light";
+    src: url("../fonts/brandon-grotesque/Brandon_light.otf") format("opentype");
+}
+@font-face {
+    font-family: "Harabara Med";
+    src: url("../fonts/brandon-grotesque/Brandon_med.otf") format("opentype");
+}
+@font-face {
+    font-family: "Harabara Reg";
+    src: url("../fonts/brandon-grotesque/Brandon_reg.otf") format("opentype");
+}
+@font-face {
+    font-family: "Harabara Thin";
+    src: url("../fonts/brandon-grotesque/Brandon_thin.otf") format("opentype");
+}
+/*end fonts*/
+
+html {
+    font-family: "Harabara Mid",sans-serif !important;
+}
+
+/*start navbar*/
+nav.bg-light{
+    background-color: transparent !important;
+}
+/*end navbar*/
 
 /* start slider*/
 .carousel-item img{
     height: 100vh;
 }
-
 /* end slider*/
+
+/*start content*/
+.content{
+    margin: 50px auto;
+    max-width: 640px;
+}
+.content h2 {
+    font-size: 1.69231rem;
+}
+/*end content*/
+
+/*img-animation*/
+figure .img-thumbnail {
+    height: 500px;
+}
+/*img-animation*/
