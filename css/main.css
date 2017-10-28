@@ -74,11 +74,29 @@ nav.bg-light{
 }
 /*end content*/
 
-/*img-animation*/
-.animate-img {
-    height: 500px;
+/*start journey*/
+.journey{
+    position: relative;
+    width: 100%;
+    padding-bottom: 600px;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    background-color: black;
+}
+.journey-content {
     position: absolute;
-    z-index: 9999;
+    top: 200px;
+    padding: 20px;
+    color: #ffffff;
+}
+.animate-img {
+    position: absolute;
+    top: -9999px;
+    right: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    margin: auto;
     min-width: 100%;
     min-height: 100%;
     transition: all 2s cubic-bezier(0.38, 0.01, 0, 1) 0s;
@@ -90,4 +108,21 @@ nav.bg-light{
     transform: scale(1.15);
 }
 
-/*img-animation*/
+/*end journey*/
+
+
+/*start footer*/
+footer {
+    width: 100%;
+    background-color: #005388;
+    padding: 40px 0;
+    color: #ffffff;
+}
+footer a, footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+footer a i {
+    margin-right: 15px;
+}
+/*end footer*/
