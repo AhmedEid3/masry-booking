@@ -21,21 +21,39 @@
 }
 /*end fonts*/
 
-html {
+html body{
     font-family: "Harabara Mid",sans-serif !important;
+    color: #005388 !important;
+}
+html body h2 {
+    font-size: 1.69231rem !important;
+    line-height: 1.5 !important;
+    font-weight: 400 !important;
+}
+
+@media (max-width: 767px) {
+    html body h2 {
+        font-size: 1.4rem !important;
+    }
 }
 
 /*start navbar*/
 nav.bg-light{
-    background: linear-gradient(to bottom, rgba(0,83,136,0.5) 0%, rgba(229,229,229,0.13) 74%, rgba(229,229,229,0) 100%) !important;
+    background-color: #e9ecef !important;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14),
+                0 1px 18px 0 rgba(0,0,0,0.12),
+                0 3px 5px -1px rgba(0,0,0,0.3);
 }
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand{
-    color: #495057;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    height: 160px;
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+    color: rgba(0, 83, 136, 1) !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: rgba(0, 83, 136, 0.7) !important;
 }
 /*end navbar*/
+
 
 /* start slider*/
 .carousel-item img{
@@ -46,15 +64,12 @@ nav.bg-light{
     fill: rgb(170,42,43);
     height: auto;
     width: 40px;
-    left: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
     bottom: 0;
-    /*animation-name: scroll;
-    animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
-    animation-iteration-count: infinite; */
     animation: scroll 1s cubic-bezier(0.15, 0.41, 0.69, 0.94) infinite;
 }
-
 
 @keyframes scroll {
     0% {
@@ -67,35 +82,46 @@ nav.bg-light{
         bottom: 50px;
     }
 }
-
 /* end slider*/
+
 
 /*start content*/
 .content{
     margin: 50px auto;
-    max-width: 640px;
 }
-.content h2 {
-    font-size: 1.69231rem;
+#st-content{
+    transition: all .35s ease-in-out;
 }
 /*end content*/
 
+
 /*start journey*/
-.journey{
+.journey-img{
     position: relative;
     width: 100%;
     padding-bottom: 600px;
     overflow: hidden;
-    display: inline-block;
-    float: left;
     background-color: black;
+    cursor: pointer;
+}
+.journey-img .fa-long-arrow-right{
+    width: 25px;
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #ffffff;
+    font-size: 25px;
 }
 .journey-content {
     position: absolute;
     top: 200px;
+    text-align: center;
     padding: 20px;
     color: #ffffff;
 }
+
 .animate-img {
     position: absolute;
     top: -9999px;
@@ -113,8 +139,30 @@ nav.bg-light{
     -webkit-transform: scale(1.15);
     transform: scale(1.15);
 }
+@media (max-width: 991px) {
+    .journey-img {
+        padding-bottom: 350px;
+    }
+    .journey-content {
+        top: 100px;
 
+    }
+}
+@media (max-width: 575px) {
+
+    .journey-content {
+        top: 50px;
+
+    }
+}
 /*end journey*/
+
+/*start Objectives*/
+.Objectives{
+    margin-bottom: 50px;
+}
+/*end Objectives*/
+
 
 
 /*start footer*/
